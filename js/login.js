@@ -83,7 +83,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
             console.log(pass)
             pass.forEach((val,ind)=>{
                 if(pnumps.indexOf(val.pnumber)>-1){
-                    sendDriver(val.name,val.pnumber,val.from,val.to,localStorage.getItem('unite_pnum'),localStorage.getItem('unite_name'),"")
+                    sendDriver(val.name,val.pnumber,val.from,val.to,localStorage.getItem('unite_pnum'),localStorage.getItem('unite_name'),"hello")
                 }
             })
         })
@@ -437,7 +437,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 document.getElementById('add_100').addEventListener('click',(e)=>{
                     console.log('asdasdasdasdasdasdasdasdasdasdasdasdasdasd')
                     let ncurr= parseInt(curr.textContent);
-                    ncurr =ncurr + 0;
+                    ncurr =ncurr + 100;
                     curr.textContent= ncurr;
                     valb.balance=ncurr
                     //changeBalance(val.pnumber,100)
@@ -451,7 +451,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 })
                 document.getElementById('add_500').addEventListener('click',(e)=>{
                     let ncurr= parseInt(curr.textContent);
-                    ncurr =ncurr + 0;
+                    ncurr =ncurr + 500;
                     curr.textContent= ncurr;
                     valb.balance=ncurr
                     //changeBalance(val.pnumber,500)
@@ -465,7 +465,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 })
                 document.getElementById('add_1000').addEventListener('click',(e)=>{
                     let ncurr= parseInt(curr.textContent);
-                    ncurr =ncurr + 0;
+                    ncurr =ncurr + 1000;
                     curr.textContent= ncurr;
                     valb.balance=ncurr
                     //changeBalance(val.pnumber,1000)
