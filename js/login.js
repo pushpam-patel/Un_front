@@ -109,7 +109,7 @@ let sendDriver=(namep,pnumberp,fromp,top,pnumberd,named,emaild)=>{
                                     </div>`
                     
                     document.querySelector('.accept_driver').addEventListener('click',(e)=>{
-                        alert("You have Accepted the request and he is added to you car");
+                        alert("You have Accepted the request and He/She is added to you car");
                         this.disabled=true;
 
                         
@@ -682,8 +682,12 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 <h6>To: ${val.to}</h6>
                 <h6>Time: ${val.time} </h6>
                 <h6>Station: ${val.station}</h6>
+                <h6>Cost: 250</h6>
                 
                 <button class="buy_ticket">Buy</button>`
+                document.querySelector('.buy_ticket').addEventListener('click',(e)=>{
+                        alert("250 has been deducted from your account");
+                        this.disabled=true;
             }
         })
 
@@ -696,8 +700,12 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 <h6>To: ${val.to}</h6>
                 <h6>Time: ${val.time} </h6>
                 <h6>Station: ${val.station}</h6>
+                <h6>Cost: 150</h6>
+                <button class="buy_tickett">Buy</button>`
                 
-                <button class="buy_ticket">Buy</button>`
+                document.querySelector('.buy_tickett').addEventListener('click',(e)=>{
+                        alert("150 has been deducted from your account");
+                        this.disabled=true;
             }
         })
 
@@ -710,6 +718,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 <h6>To: ${val.to}</h6>
                 <h6>Time: ${val.time} </h6>
                 <h6>Station: ${val.station}</h6>
+                <h6>Cost: 350</h6>
                 
                 <button class="buy_ticket">Buy</button>`
             }
