@@ -451,7 +451,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 })
                 document.getElementById('add_500').addEventListener('click',(e)=>{
                     let ncurr= parseInt(curr.textContent);
-                    ncurr =ncurr + 100;
+                    ncurr =ncurr + 500;
                     curr.textContent= ncurr;
                     valb.balance=ncurr
                     //changeBalance(val.pnumber,500)
