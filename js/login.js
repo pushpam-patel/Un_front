@@ -290,7 +290,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
     getDriver(lat,lon,name,pno,from,to)
 }
 
-// Maro CODES................Start.........................
+// ................Start.........................
 
 
 
@@ -437,7 +437,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 document.getElementById('add_100').addEventListener('click',(e)=>{
                     console.log('asdasdasdasdasdasdasdasdasdasdasdasdasdasd')
                     let ncurr= parseInt(curr.textContent);
-                    ncurr =ncurr + 0;
+                    ncurr =ncurr + 100;
                     curr.textContent= ncurr;
                     valb.balance=ncurr
                     //changeBalance(val.pnumber,100)
@@ -451,7 +451,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 })
                 document.getElementById('add_500').addEventListener('click',(e)=>{
                     let ncurr= parseInt(curr.textContent);
-                    ncurr =ncurr + 0;
+                    ncurr =ncurr + 100;
                     curr.textContent= ncurr;
                     valb.balance=ncurr
                     //changeBalance(val.pnumber,500)
@@ -465,7 +465,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 })
                 document.getElementById('add_1000').addEventListener('click',(e)=>{
                     let ncurr= parseInt(curr.textContent);
-                    ncurr =ncurr + 0;
+                    ncurr =ncurr + 1000;
                     curr.textContent= ncurr;
                     valb.balance=ncurr
                     //changeBalance(val.pnumber,1000)
@@ -480,8 +480,8 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 document.getElementById('driver_b_add').addEventListener('click',(e)=>{
                     let ncurr= parseInt(curr.textContent);
                     ncurr =ncurr + parseInt(mon.value);
-                    curr.textContent= ncurr/2;
-                    valb.balance=ncurr/2
+                    curr.textContent= ncurr;
+                    valb.balance=ncurr
                     //changeBalance(val.pnumber,mon.value)
                     curr.textContent= valb.balance
                 console.log({pnumber:localStorage.getItem("unite_pnum").toString(), balance: valb.balance.toString()})
