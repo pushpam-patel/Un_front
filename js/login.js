@@ -682,13 +682,11 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 <h6>To: ${val.to}</h6>
                 <h6>Time: ${val.time} </h6>
                 <h6>Station: ${val.station}</h6>
-                <h6>Cost: 250</h6>
-                
-                <button class="buy_ticket">Buy</button>`
-                document.querySelector('.buy_ticket').addEventListener('click',(e)=>{
-                        alert("250 has been deducted from your account");
-                        this.disabled=true;
-            }
+                <h6>Cost: 250</h6>`
+                // document.querySelector('.buy_ticket').addEventListener('click',(e)=>{
+                //         alert("250 has been deducted from your account");
+                //         this.disabled=true;
+                }
         })
 
         data.train.forEach((val,ind)=>{
@@ -700,12 +698,11 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 <h6>To: ${val.to}</h6>
                 <h6>Time: ${val.time} </h6>
                 <h6>Station: ${val.station}</h6>
-                <h6>Cost: 150</h6>
-                <button class="buy_tickett">Buy</button>`
+                <h6>Cost: 150</h6>`
                 
-                document.querySelector('.buy_tickett').addEventListener('click',(e)=>{
-                        alert("150 has been deducted from your account");
-                        this.disabled=true;
+                // document.querySelector('.buy_tickett').addEventListener('click',(e)=>{
+                        // alert("150 has been deducted from your account");
+                        // this.disabled=true;
             }
         })
 
@@ -718,9 +715,7 @@ if(window.location.pathname.substring(window.location.pathname.lastIndexOf("/") 
                 <h6>To: ${val.to}</h6>
                 <h6>Time: ${val.time} </h6>
                 <h6>Station: ${val.station}</h6>
-                <h6>Cost: 350</h6>
-                
-                <button class="buy_ticket">Buy</button>`
+                <h6>Cost: 350</h6>`
             }
         })
 
